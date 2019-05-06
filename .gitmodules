@@ -1,0 +1,3 @@
+[submodule "fivethirtyeight_data"]
+	path = fivethirtyeight_data
+	url = https://github.com/fivethirtyeight/data
