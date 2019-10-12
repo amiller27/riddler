@@ -29,6 +29,6 @@ def p3(N):
 MAX_N = 100
 cache = np.tile(Decimal(np.NaN), (MAX_N // 2 + 1, MAX_N + 1))
 
-plt.plot([p3(N) for N in range(1, MAX_N)])
-plt.plot([0.5 for _ in range(1, MAX_N)])
+plt.plot(list(range(1, MAX_N)), [p3(N) for N in range(1, MAX_N)])
+plt.plot(list(range(1, MAX_N)), [0.5 for _ in range(1, MAX_N)])
 plt.show()
