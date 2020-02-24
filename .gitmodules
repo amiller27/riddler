@@ -1,3 +1,6 @@
 [submodule "fivethirtyeight_data"]
 	path = fivethirtyeight_data
 	url = https://github.com/fivethirtyeight/data
+[submodule "2020-02-21-flipped-coins/baselines"]
+	path = 2020-02-21-flipped-coins/baselines
+	url = https://github.com/openai/baselines

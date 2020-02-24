@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -ex
+
+cd baselines
+git apply ../baselines.patch
+cd ..
+
+conda install pip tensorflow=1.14
+cd baselines && pip install -e . && cd ..
+cd gym-flipper && pip install -e . && cd ..
+
+python -m baselines.run --alg=acktr --env=flipper-v0

@@ -1,0 +1,7 @@
+README.md
+setup.py
+gym_flipper.egg-info/PKG-INFO
+gym_flipper.egg-info/SOURCES.txt
+gym_flipper.egg-info/dependency_links.txt
+gym_flipper.egg-info/requires.txt
+gym_flipper.egg-info/top_level.txt

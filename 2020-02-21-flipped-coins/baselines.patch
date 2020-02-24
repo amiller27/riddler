@@ -1,0 +1,22 @@
+diff --git a/baselines/run.py b/baselines/run.py
+index 33bb15f..cd9f29d 100644
+--- a/baselines/run.py
++++ b/baselines/run.py
+@@ -7,6 +7,8 @@ from collections import defaultdict
+ import tensorflow as tf
+ import numpy as np
+ 
++import gym_flipper
++
+ from baselines.common.vec_env import VecFrameStack, VecNormalize, VecEnv
+ from baselines.common.vec_env.vec_video_recorder import VecVideoRecorder
+ from baselines.common.cmd_util import common_arg_parser, parse_unknown_args, make_vec_env, make_env
+@@ -49,6 +51,8 @@ _game_envs['retro'] = {
+     'SpaceInvaders-Snes',
+ }
+ 
++_game_envs['custom'] = {'flipper-v0'}
++
+ 
+ def train(args, extra_args):
+     env_type, env_id = get_env_type(args)
